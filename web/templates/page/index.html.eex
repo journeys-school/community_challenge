@@ -1,4 +1,7 @@
-<div class="jumbotron">
-  <h2>Journeys School</h2>
-  <p class="lead">Community Challenge Application</p>
+<div>
+  <a href="/challenges" class="btn btn-primary">Show Challenges</a>
+</div>
+
+<div>
+  <a href="/challenges/new" class="btn btn-success">Add New Challenge</a>
 </div>
