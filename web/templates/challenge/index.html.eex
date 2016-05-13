@@ -2,3 +2,13 @@
   &laquo; Home
 </a>
 <h2>Challenges</h2>
+
+<ul>
+  <%= for  c <- @challenges do %>
+  <li>
+    <p><b><%= c.title %></b></p>
+    <p>Description: <%= c.description %></p>
+    <p><%= c.constraints %></p>
+  </li>
+  <% end %>
+</ul>
