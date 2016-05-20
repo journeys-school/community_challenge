@@ -2,3 +2,32 @@
   &laquo; Home
 </a>
 <h2>Add New Challenge</h2>
+
+<%= form_for @changeset, challenge_path(@conn, :create), fn f -> %>
+<div>
+  <label for="title"> Title </label>
+  <br/>
+  <%= text_input f, :title %>
+</div>
+<div>
+  <label for="description"> Description </label>
+  <br/>
+  <%= textarea f, :description %>
+</div>
+<div>
+  <label for="email"> Email </label>
+  <br/>
+  <%= text_input f, :email %>
+</div>
+
+  <%= submit "Submit Challenge" %>
+<% end %>
+
+<!-- field :title, :string
+field :description, :string
+field :email, :string
+field :phone, :string
+field :constraints, :string
+field :city, :string
+field :state, :string
+field :zip_code, :string -->

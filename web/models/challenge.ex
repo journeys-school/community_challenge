@@ -14,7 +14,7 @@ defmodule CommunityChallenge.Challenge do
     timestamps
   end
 
-  @required_fields ~w(title description email phone constraints city state zip_code)
+  @required_fields ~w(title description email) # phone constraints city state zip_code
   @optional_fields ~w()
 
   @doc """

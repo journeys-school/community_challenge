@@ -19,6 +19,7 @@ defmodule CommunityChallenge.Router do
     get "/", PageController, :index
     get "/challenges", ChallengeController, :index
     get "/challenges/new", ChallengeController, :new
+    post "/challenges", ChallengeController, :create
   end
 
   # Other scopes may use custom stacks.
